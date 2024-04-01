@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/styles.css"/>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+
+    <script src="/static/ajax.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <form id="search-form">
+        <h1 class="main-title">Stock Search</h1>
+        <div id="search-component">
+            <button>
+                <img id="search-btn" src="/static/img/search-solid.svg" width="20"/>
+            </button>
+            <input type="text" required id="search-input" placeholder="Enter Stock Ticker Symbol"/>
+            <img id="clear-btn" src="/static/img/times-solid.svg" width="20"/>
+        </div>
+    </form>
+    <div id="navigation">
+        <div id="company-nav">
+            Company
+        </div>
+        <div id="summary-nav">
+            Stock Summary
+        </div>
+        <div id="charts-nav">
+            Charts
+        </div>
+        <div id="news-nav">
+            Latest News
+        </div>
+    </div>
+
+    <div id="company" class="content">
+        <table>
+            <tr>
+                <td colspan="2">
+                  <div class="logo-item">
+                        <img id="company-logo"/>
+                  </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Company Name</th>
+                <td id="company-name"></td>
+            </tr>
+            <tr>
+                <th>Stock Ticker Symbol</th>
+                <td id="stock-ticker-symbol"></td>
+            </tr>
+            <tr>
+                <th>Stock Exchange Code</th>
+                <td id="stock-exchange-code"></td>
+            </tr>
+            <tr>
+                <th>Company Start Date</th>
+                <td id="company-start-date"></td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td id="category"></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="summary" class="content">
+
+        <table>
+
+            <tr>
+                <th>Stock Ticker Symbol</th>
+                <td id="summary-stock-ticker-symbol"></td>
+            </tr>
+            <tr>
+                <th>Trading Day</th>
+                <td id="trading-day"></td>
+            </tr>
+            <tr>
+                <th>Previous Closing Price</th>
+                <td id="previous-closing-price"></td>
+            </tr>
+            <tr>
+                <th>Opening Price</th>
+                <td id="opening-price"></td>
+            </tr>
+            <tr>
+                <th>High Price</th>
+                <td id="high-price"></td>
+            </tr>
+             <tr>
+                <th>Low Price</th>
+                <td id="low-price"></td>
+            </tr>
+             <tr>
+                <th>Change</th>
+                <td id="change"></td>
+            </tr>
+             <tr>
+                <th>Change Percent</th>
+                <td id="change-percent"></td>
+            </tr>
+        </table>
+
+        <div class="trends-bar">
+            <p>Strong <br/> Sell</p>
+            <div id="strong-sell"></div>
+            <div id="sell"></div>
+            <div id="hold"></div>
+            <div id="buy"></div>
+            <div id="strong-buy"></div>
+            <p>Strong <br/> Buy</p>
+        </div>
+        <p class="trend-title">Recommendation Trend</p>
+    </div>
+
+
+    <div id="charts" class="content">
+        <div id="chart"></div>
+    </div>
+
+    <div id="news" class="content">
+        <ul id="news-list" class="news-list">
+
+        </ul>
+    </div>
+    <div class="error" id="error">
+        Error: No record has been found, please enter a valid symbol.
+    </div>
+</div>
+
+
+<script src="/static/script.js"></script>
+</body>
+</html>

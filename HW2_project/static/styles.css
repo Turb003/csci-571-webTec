@@ -1,0 +1,234 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url("/static/img/back.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.container {
+    width: 960px;
+    margin: 30px auto;
+}
+.main-title {
+    text-align: center;
+    margin-top: 20px;
+}
+#search-component {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 0 15px gainsboro;
+}
+
+#search-component #search-icon {
+    background: none;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#search-component #search-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+#search-component button {
+    background: transparent;
+    border: none;
+}
+
+#search-component #clear-icon {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+#navigation {
+    margin-top: 100px;
+    background: whitesmoke;
+    height: 60px;
+    display: none;
+}
+#navigation > div {
+    cursor: pointer;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navigation > div:hover {
+    background: gainsboro;
+}
+#navigation > .active {
+    background: rgb(128, 128, 128) !important;
+}
+
+#company, #summary {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#company img {
+    width: 150px;
+    height: 150px;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 60%;
+    margin: 0 auto;
+}
+table tr {
+    height: 40px;
+    border-bottom: 1px solid gainsboro !important;
+}
+th {
+    text-align: end;
+    padding-right: 5px;
+}
+td {
+    padding-left: 5px;
+    text-align: start;
+}
+th td {
+    width: 50%;
+}
+.logo-item {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.info-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid gainsboro;
+}
+.info-item h4, p {
+    width: 50%;
+}
+.info-item h4 {
+    text-align: end;
+}
+.info-item p {
+    text-align: start;
+}
+h4, p {
+    margin: 0;
+    padding: 0;
+}
+.info-item p {
+    color: rgb(128, 128, 128);
+}
+
+#summary p {
+    color: black;
+}
+#summary .info-item:first-child {
+    border-top: 1px solid gainsboro;
+}
+
+.trends-bar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trends-bar > div {
+    width: 80px;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.trends-bar > p:first-child {
+    margin-right: 10px;
+    color: red !important;
+    font-weight: bold;
+}
+.trends-bar > p:last-child {
+    margin-left: 10px;
+    color: green !important;
+    font-weight: bold;
+}
+#strong-sell {
+    background: red;
+}
+#sell {
+    background: #a44e1a;
+}
+#hold {
+    background: #71911e;
+}
+#buy {
+    background: #539b5c;
+}
+#strong-buy {
+    background: #5bd75b;
+}
+.trend-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+#charts {
+    width: 100%;
+}
+#chart {
+    width: 100%;
+    height: 600px;
+}
+#news {
+    width: 100%;
+}
+.news-list {
+    list-style: none;
+    width: 100%;
+}
+.news-item {
+    padding: 10px;
+    box-sizing: border-box;
+    background: #eff0f1;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.news-item img {
+    flex-shrink: 0;
+}
+.news-item h4 {
+    padding-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#company, #news, #summary, #charts {
+    display: none;
+}
+.error {
+    margin: 100px auto;
+    width: 70%;
+    background: gainsboro;
+    color: rgb(128, 128, 128);
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
