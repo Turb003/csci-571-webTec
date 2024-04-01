@@ -1,2 +1,3 @@
-# csci-571-webTec
+# USC csci-571-WebTechnogies
 archived for profile.
+
