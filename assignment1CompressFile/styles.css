@@ -1,0 +1,280 @@
+body {
+    margin-bottom: 50px;
+    margin:0;
+    padding: 0;
+}
+
+header {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 100;
+    padding: 10px;
+}
+
+.main_logo{
+    color:rgb(161, 139, 79);
+    flex-grow: 1;
+    font-weight:300;
+    font-family: serif;
+}
+
+.nav_links{
+    display: flex;
+    justify-content: flex-end;
+    color: #000;
+    font-weight: 300;
+    
+}
+
+nav ul li a.home_link{
+    color: rgb(161, 139, 79);
+}
+
+.nav_links li{
+    margin: 0 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.main_info_block{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.topPage{
+    width: 100%;
+    height: 1060px;
+    
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.topPage h1{
+    color: white; 
+    font-size: 48px; 
+    font-weight: 350; 
+    letter-spacing: 15px;
+    font-family: serif
+   
+}
+
+
+.top_part{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 60px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_left_part{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    flex: 1; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    height: 580px;
+    margin-right: 50px;
+}
+
+.service_text h2{
+    font-size: 26px;
+    letter-spacing: 10px;
+    margin: 0 0 130px 0;
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.service_text p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 50px;
+    letter-spacing: 3px; 
+}
+
+.service_text button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    padding: 12px 60px
+}
+
+.right_part_image{
+    flex:1;
+    display:flex;
+    height: auto;
+}
+.right_part_image img{
+    width: 659;
+}
+
+.testimonial_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black; 
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+blockquote {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.left_arrow, .right_arrow {
+    font-size: 3em; 
+    color: rgb(161, 139, 79);
+}
+
+.testimonial_part blockquote h2{
+    font-family:"passion one";
+    font-size:xx-large;
+    
+    
+}
+.testimonial_part blockquote p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    font-weight:500;
+    font-size: x-large;
+    margin-bottom: 45px;
+}
+
+.testimonial_part blockquote footer{
+    color:rgb(161, 139, 79);
+    font-weight:500;
+}
+
+.bottom_part{
+    margin-top: 100px;
+    height: 780px;
+    width: 1160px;
+    background-repeat: no-repeat;
+   
+    align-items: center;
+    text-align: center;
+    display:flex;
+    
+    background-size: cover;
+    background-attachment:fixed;
+
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    justify-content: center;
+
+}
+
+.overlay_content{
+    position: absolute;
+    top: 50px;
+    right:50px;
+    text-align: center;
+    justify-content: center;
+    height: 520px;
+    width: 350px;
+    color: #fff;
+}
+
+.overlay_content h2{
+    font-size: 26px;
+    letter-spacing: 10px;
+    margin: 0 0 200px 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    margin-top:130px ;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.overlay_content p{  
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+   
+    letter-spacing: 8px;
+    padding-top: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.overlay_content button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    padding: 8px 35px;
+}
+
+.footer_container {
+    display: flex;
+    padding: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+
+    margin-bottom: 60px;
+    background: rgb(161, 139, 79);
+    height: 120px;
+    color: white;
+}
+
+.info_block{
+    column-count: 3;
+    column-gap: 10px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: #fff;
+    
+}
+.info_block li{
+    display: flex;
+    flex-direction: column;
+}
+.event_address, .contact_info, .reserved_right {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: white;
+    display:inline;
+     
+}
+
+.book_button{
+    color:#fff;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 5px 45px;
+    margin-top:60px;
+    margin-left: 150px;
+}
+
